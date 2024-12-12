@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pasta</title>
+    <style>
+        *{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        body{
+            background-color: rgba(142, 229, 255, 0.726);
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+        .header{
+            /* background-color: rgba(137, 43, 226, 0.651); */
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 3px rgba(56, 53, 255, 0.897)
+        }
+        .header h1{
+            align-items: center;
+            margin: auto;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .des{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding: 20px;
+            gap: 2em;
+            }
+        h3{
+            color: rgb(214, 0, 0);
+            text-decoration: underline;
+        }
+        img{
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 4px rgb(0, 247, 82);
+            width: 60%;
+            height: 400px;
+
+        }
+        .s1{
+            display: flex;
+            gap: 1em;
+            padding: 0.2em;
+        }
+        .des1{
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 4px rgb(255, 129, 25);
+            padding: 10px;
+        }
+        .ing{
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 4px rgb(255, 62, 136); 
+            padding: 0.2em;
+            width: 40%;
+        }
+        .steps{
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 4px rgb(95, 204, 255);
+            padding: 0.2em;
+            width: 60%;
+        }
+        a{
+            background-color: rgba(241, 156, 45, 0.904);
+            padding: 0.2em;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0px 0px 8px 4px rgb(9, 142, 204);
+            position: fixed;
+            bottom: 1.2em;
+            right: 2em;
+            
+        }
+        a:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<div class="header">
+    <h1>Turkish Pasta</h1>
+    
+</div>
+<div class="des">
+    <img src="data:image/jpeg;base64,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">
+    <div class="des1">
+    <h3>Description</h3>
+    <p> This Turkish pasta recipe features a sweet paprika yogurt sauce, ground round, and fusilli pasta.
+
+    </p>
+</div>
+</div>
+<div class="s1">
+<div class="ing">
+    <h3>Ingredients</h3>
+    <ul>
+        <li>2 cups strained Greek yogurt</li>
+        <li>3 cloves garlic, finely minced</li>
+        <li>2 teaspoons kosher salt, divided, plus more to taste</li>
+        <li>5 tablespoons butter</li>
+        <li>2 teaspoons sweet paprika, divided</li>
+        <li>1 pound fusilli pasta</li>
+        <li>1 1/4 pounds ground round</li>
+        <li>1 cup chopped onion</li>
+        <li>1/4 teaspoon curry powder</li>
+        <li>2 teaspoons onion powder</li>
+        <li>1/2 teaspoon freshly ground black pepper</li>
+        <li>1 pint grape tomatoes, quartered</li>
+        <li>1 bunch flat leaf parsley, roughly chopped</li>
+    </ul>
+</div>
+<div class="steps">
+    <h3>Steps</h3>
+    <ol>
+        <li>Stir together yogurt, garlic and 1/2 teaspoon salt in a bowl until well blended and set aside. Melt butter in a small skillet or saucepan and stir in 1/2 teaspoon paprika and salt to taste. Keep warm.</li>
+        <li>Bring a large pot of salted water to a boil. Add pasta and cook until al dente, about 9 minutes; drain.</li>
+        <li>Meanwhile, heat a large skillet over medium-high heat. Add ground beef and cook, breaking up meat with a spatula, until beginning to brown. Add onion, remaining paprika, curry powder, onion powder, remaining salt, and pepper and cook until browned, crumbly, and slightly crispy.</li>
+        <li>Divide pasta among serving plates and top evenly with yogurt mixture. Top with ground beef mixture and drizzle evenly with butter mixture. Sprinkle the top with tomatoes and parsley.</li>
+    </ol>
+</div>
+</div>
+<a href="index.html">BACK</a>
+<body>
+    
+</body>
+</html>
